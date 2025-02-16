@@ -1,7 +1,10 @@
 FROM nikolaik/python-nodejs:python3.13-nodejs23-slim
 
-# Install uv.
-# COPY --from=ghcr.io/astral-sh/uv:latest /uv /uvx /bin/
+# Install system dependencies
+RUN apt-get update && apt-get install -y \
+    curl \
+    git \
+    && rm -rf /var/lib/apt/lists/*
 
 # Install prettier.
 RUN npm install -g prettier
