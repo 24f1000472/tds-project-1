@@ -56,7 +56,7 @@ function_mappings: Dict[str, Callable] = {
     "process_and_write_logfiles": process_and_write_logfiles, 
     "sort_json_by_keys": sort_json_by_keys, 
     "count_occurrences": count_occurrences,
-    "fetch_data_from_api_and_save": fetch_data_from_api_and_save,
+    # "fetch_data_from_api_and_save": fetch_data_from_api_and_save,
     "clone_git_repo_and_commit": clone_git_repo_and_commit,
     "run_sql_query_on_database": run_sql_query_on_database,
     "scrape_webpage": scrape_webpage,
